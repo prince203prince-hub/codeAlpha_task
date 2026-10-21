@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muskan Singh | Portfolio</title>
+  <meta name="description" content="Portfolio of Muskan Singh – student at Vivekananda Global University. Skills in HTML, CSS and Java." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">MS<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light theme">🌙</button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Hello, I'm</p>
+        <h1 class="reveal">Muskan Singh</h1>
+        <h2 class="reveal"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead reveal">Student at Vivekananda Global University who enjoys building clean, responsive web pages with HTML and CSS, and writing programs in Java.</p>
+        <div class="cta reveal">
+          <a href="#projects" class="btn primary">View my work</a>
+          <a href="#contact" class="btn ghost">Get in touch</a>
+        </div>
+        <div class="socials reveal">
+          <a href="mailto:muskansingh23039@gmail.com">Email</a>
+          <a href="tel:+916200717693">Call</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="avatar reveal">
+          <div class="avatar-ring"><span>MS</span></div>
+        </div>
+        <div class="reveal">
+          <h3 class="section-title">About me</h3>
+          <p>Hi, I'm Muskan Singh, a student at Vivekananda Global University. I enjoy turning ideas into clean, usable web pages and programs.</p>
+          <p>I work with HTML and CSS to build responsive layouts, and with Java to learn programming fundamentals and problem solving. I'm always keen to learn something new and collaborate with others.</p>
+          <div class="stats">
+            <div><strong data-count="3">0</strong><span>Languages: HTML, CSS, Java</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h3 class="section-title reveal">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill reveal"><div class="skill-head"><span>HTML</span><span>90%</span></div><div class="bar"><i data-level="90"></i></div></div>
+          <div class="skill reveal"><div class="skill-head"><span>CSS</span><span>85%</span></div><div class="bar"><i data-level="85"></i></div></div>
+          <div class="skill reveal"><div class="skill-head"><span>Java</span><span>80%</span></div><div class="bar"><i data-level="80"></i></div></div>
+        </div>
+        <div class="chips reveal">
+          <span>Responsive Design</span><span>Object-Oriented Programming</span><span>Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title reveal">Projects</h3>
+        <div class="filters reveal" id="filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="app">App</button>
+          <button data-filter="tool">Tools</button>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <article class="card reveal" data-cat="web">
+            <div class="thumb t1"><span>🛒</span></div>
+            <div class="card-body">
+              <h4>E‑commerce Store</h4>
+              <p>Full‑stack shop with cart, auth and payments.</p>
+              <div class="tags"><span>React</span><span>Node</span><span>MongoDB</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Live demo →</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+          <article class="card reveal" data-cat="app">
+            <div class="thumb t2"><span>✅</span></div>
+            <div class="card-body">
+              <h4>Task Manager</h4>
+              <p>Kanban‑style productivity app with drag &amp; drop.</p>
+              <div class="tags"><span>JavaScript</span><span>Firebase</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Live demo →</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+          <article class="card reveal" data-cat="web">
+            <div class="thumb t3"><span>🌦️</span></div>
+            <div class="card-body">
+              <h4>Weather Dashboard</h4>
+              <p>Live forecasts with charts and location search.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>API</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Live demo →</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+          <article class="card reveal" data-cat="tool">
+            <div class="thumb t4"><span>⚙️</span></div>
+            <div class="card-body">
+              <h4>CLI Toolkit</h4>
+              <p>Command‑line utilities to automate daily dev tasks.</p>
+              <div class="tags"><span>Python</span><span>Click</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Repo →</a></div>
+            </div>
+          </article>
+          <article class="card reveal" data-cat="app">
+            <div class="thumb t5"><span>💬</span></div>
+            <div class="card-body">
+              <h4>Realtime Chat</h4>
+              <p>Rooms, typing indicators and message history.</p>
+              <div class="tags"><span>Socket.io</span><span>Express</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Live demo →</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+          <article class="card reveal" data-cat="web">
+            <div class="thumb t6"><span>📝</span></div>
+            <div class="card-body">
+              <h4>Markdown Blog</h4>
+              <p>Static blog generator with themes and RSS.</p>
+              <div class="tags"><span>Node</span><span>Markdown</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Live demo →</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section alt">
+      <div class="container">
+        <div class="resume-head reveal">
+          <h3 class="section-title">Resume</h3>
+          <a href="resume.pdf" download class="btn primary">⬇ Download PDF</a>
+        </div>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <span class="dot"></span>
+            <time>Present</time>
+            <h4>Student</h4>
+            <p class="muted">Vivekananda Global University</p>
+            <p>Learning and practising HTML, CSS and Java.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h3 class="section-title">Let's talk</h3>
+          <p>Have a project, an internship opportunity, or just want to say hi? My inbox is always open.</p>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:muskansingh23039@gmail.com">muskansingh23039@gmail.com</a></li>
+            <li>📞 <a href="tel:+916200717693">+91 6200717693</a></li>
+            <li>🎓 Vivekananda Global University</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Muskan Singh. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
